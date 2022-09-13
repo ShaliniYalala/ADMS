@@ -1,0 +1,18 @@
+﻿@page
+@model AADMS.Pages.AdminHomeModel
+@{
+    ViewData["Title"] = "AdminHome";
+    Layout = "~/Pages/Shared/_AdminLayout.cshtml";
+}
+
+<header class="masthead bg-primary text-white text-center">
+    <div class="container d-flex align-items-center flex-column">
+        <button type="button" class="btn btn-primary btn-lg" style="background-color:#212529;"><a asp-page="AddUserData" style="text-decoration:none;color:white;">NEW DATA</a></button>
+        <br />
+        <button type="button" class="btn btn-primary btn-lg" style="background-color:#212529;"><a asp-page="ViewAllUsers" style="text-decoration:none;color:white;">VIEW DATA</a></button>
+        <br />
+        <button type="button" class="btn btn-primary btn-lg" style="background-color:#212529;"><a asp-page="EditUserData" style="text-decoration:none;color:white;">EDIT DATA</a></button>
+        <br />
+    </div>
+</header>
+
